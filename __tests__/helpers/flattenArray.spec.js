@@ -4,7 +4,7 @@ describe('helpers', () => {
   describe('#flattenArray', () => {
     it('should flatten an array of arrays', () => {
       const arrayToFlatten = [[1], [2], [3]]
-      expect(flattenArray(arrayToFlatten)).toMatchSnapshot();
+      expect(flattenArray(arrayToFlatten)).toEqual([1, 2, 3]);
     });
 
     it('should flatten nested arrays', () => {
