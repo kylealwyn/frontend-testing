@@ -24,7 +24,8 @@ describe('async actions', () => {
   it('creates FETCH_TODOS_SUCCESS when fetching todos has been done', () => {
     return store.dispatch(actions.fetchTodos())
       .then(() => { // return of async actions
-        expect(store.getActions()).toMatchSnapshot()
+        expect(store.getActions()).toMatchSnapshot();
+        expect(store.getState()).toMatchSnapshot();
       })
   })
 })

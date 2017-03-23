@@ -30,8 +30,9 @@ describe('<Button />', () => {
   });
 
   it('should call the `onClick` prop when clicked', () => {
+    expect(spy.mock.calls.length).toEqual(0);
     wrapper.find('.btn').simulate('click');
-    expect(spy.mock.calls.length).toEqual(1)
+    expect(spy.mock.calls.length).toEqual(1);
   })
 
   it('should test instance methods', () => {

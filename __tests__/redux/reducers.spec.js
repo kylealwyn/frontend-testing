@@ -1,12 +1,12 @@
-import todoReducer, { initialTodoState } from '../../src/redux/reducers'
-import * as types from '../../src/redux/types'
+import todoReducer, { initialTodoState } from '../../src/redux/reducers';
+import * as types from '../../src/redux/types';
 
 describe('todos reducer', () => {
   it('should return the initial state', () => {
     expect(
       todoReducer(undefined, {})
-    ).toEqual(initialTodoState)
-  })
+    ).toEqual(initialTodoState);
+  });
 
   it('should handle ADD_TODO', () => {
     // create our first todo
@@ -25,4 +25,13 @@ describe('todos reducer', () => {
 
     expect(secondTodoState).toMatchSnapshot();
   });
-})
+
+  it('should handle FETCH_TODOS_SUCCESS', () => {
+    const state = todoReducer(initialTodoState, {
+      type: types.FETCH_TODOS_SUCCESS,
+      payload: ['todo1', 'todo2'],
+    });
+
+    expect(state).toEqual(['todo1', 'todo2'])
+  });
+});

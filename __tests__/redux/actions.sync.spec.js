@@ -2,7 +2,7 @@ import * as Actions from '../../src/redux/actions'
 import * as Types from '../../src/redux/types';
 
 describe('Redux Actions', () => {
-  it('should create an action and match specificed json', () => {
+  it('should create an action and match expected object', () => {
     const text = 'Finish docs';
     const expectedAction = {
       type: Types.ADD_TODO,
