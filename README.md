@@ -52,7 +52,7 @@ With asynchronous actions, we will typically want to verify the correct actions 
 #### Reducers
 Reducers are just functions that can be tested in isolation. They take in 2 arguments: `state` and `action`, and they return a new state. We can test to ensure the correct state is being returned given specific actions.
 
-[Reducer example](__tests__/helpers/flattenArray.spec.js)
+[Reducer example](__tests__/redux/reducers.spec.js)
 
 ___
 
