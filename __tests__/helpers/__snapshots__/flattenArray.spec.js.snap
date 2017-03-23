@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`helpers #flattenArray should flatten an array of arrays 1`] = `
+Array [
+  1,
+  2,
+  3,
+]
+`;
+
+exports[`helpers #flattenArray should flatten nested arrays 1`] = `
+Array [
+  1,
+  "bob",
+  Object {
+    "hello": "world",
+  },
+  4,
+  5,
+  false,
+  7,
+]
+`;

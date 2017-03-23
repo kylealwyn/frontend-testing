@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`async actions creates FETCH_TODOS_SUCCESS when fetching todos has been done 1`] = `
+Array [
+  Object {
+    "type": "FETCH_TODOS_REQUEST",
+  },
+  Object {
+    "payload": Object {
+      "todos": Array [
+        "do something",
+      ],
+    },
+    "type": "FETCH_TODOS_SUCCESS",
+  },
+]
+`;

@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`todos reducer should handle ADD_TODO 1`] = `
+Array [
+  Object {
+    "completed": false,
+    "id": 0,
+    "text": "First Todo",
+  },
+]
+`;
+
+exports[`todos reducer should handle ADD_TODO 2`] = `
+Array [
+  Object {
+    "completed": false,
+    "id": 1,
+    "text": "Second Todo",
+  },
+  Object {
+    "completed": false,
+    "id": 0,
+    "text": "First Todo",
+  },
+]
+`;

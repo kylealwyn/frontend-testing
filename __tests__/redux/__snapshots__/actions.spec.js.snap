@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Redux Actions should create an action and match snapshot 1`] = `
+Object {
+  "payload": "Finish docs",
+  "type": "ADD_TODO",
+}
+`;
